@@ -1,18 +1,19 @@
 body{
     background-color: var(--col-backbround);
     color: var(--col-font);
-    font-family: 'TruenoUltraLight';
+    font-family: Reislust;
     text-align: center;
 }
 .heading{
 }
 h1{
-    color: #f1f1f1;
+    
     
 }
 h2{
-    color:#D1A103;
+  
     font-size: 5rem;
+    height: 1000px;
 }
 
 .logo{
@@ -38,3 +39,17 @@ h2{
     --col-red-3: #DFA99B;
     --col-red-4: #F5F2F0;
     --col-red-5: #F2EAE3;}
+   
+@font-face {
+    font-family: Reislust;
+    src: url(./Reislust-97D7.ttf);
+    }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    
+    
+}
