@@ -1,30 +1,25 @@
-body{
+html{
+    font-size: 30px;
     background-color: var(--col-backbround);
     color: var(--col-font);
     font-family: Reislust;
     text-align: center;
 }
-.heading{
-}
+
 h1{
-    
-    
-}
-h2{
   
-    font-size: 5rem;
-    height: 1000px;
+    font-size: 3rem;
+    z-index: 92;
+    
 }
 
-.logo{
-    width: 200px;
-    height: auto;
-    float: left;
-}
+
 .cover{
-    width: 75%;
+    width: 70%;
     height: auto;
     min-width: 600px;
+    position: relative;
+    z-index: 93;
 
 }
 :root{
@@ -50,7 +45,49 @@ h2{
     max-width: 100%;
     height: auto;
 }
+.grid{
+    display: grid;
+    grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+    gap: 10px 10px;
+}
+
+header{
+    grid-area: header;
+}
+
 nav{
-    
-    
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+nav a{
+    margin-left: 2rem;
+}
+
+main{
+    grid-area: main;
+}
+
+a{
+    text-decoration: none;
+    color: var(--col-green-2);
+}
+
+li{
+    list-style-position: inside;
+}
+ul{
+    width: 20%;
+
+}
+
+.social-media a img{
+    height: auto;
+    width: 1.5rem;
+    margin-right: 1.5rem;
 }
