@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Reislust
+font link: http://www.fontspace.com/ketjupmandja/reislust
+font author: Ihsan Habib
+font author site: https://www.instagram.com/ihsanhbib/
+Slogan Font: Reislust
+
+icon designer: Mister Pixel
+icon designer link: /MisterPixel
+        
+
+fontColor: {"hex":"#64825E"}
+bgColor: {"hex":"#F7FAF4"}
+iconColor: {"hex":"#64825E"}
+sloganColor: {"hex":"#1B231A"}
+      

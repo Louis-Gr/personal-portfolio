@@ -1,0 +1,40 @@
+body{
+    background-color: var(--col-backbround);
+    color: var(--col-font);
+    font-family: 'TruenoUltraLight';
+    text-align: center;
+}
+.heading{
+}
+h1{
+    color: #f1f1f1;
+    
+}
+h2{
+    color:#D1A103;
+    font-size: 5rem;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+.cover{
+    width: 75%;
+    height: auto;
+
+}
+:root{
+    --col-font: #1B231A;
+    --col-logo: #50684B;
+    --col-green-2: #64825E;
+    --col-green-3: #9AB295;
+    --col-green-4: #C7D4C4;
+    --col-green-5: #EAEDE8;
+    --col-backbround: #F7FAF4;
+    --col-red-1: #B04C35;
+    --col-red-2: #CB6852;
+    --col-red-3: #DFA99B;
+    --col-red-4: #F5F2F0;
+    --col-red-5: #F2EAE3;}
