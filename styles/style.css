@@ -24,6 +24,7 @@ h2{
 .cover{
     width: 75%;
     height: auto;
+    min-width: 600px;
 
 }
 :root{
