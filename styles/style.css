@@ -15,7 +15,7 @@ h1{
 
 
 .cover{
-    width: 70%;
+    width: 90%;
     height: auto;
     min-width: 600px;
     position: relative;
@@ -75,7 +75,6 @@ nav{
     grid-area: nav;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 
 }
 
@@ -107,7 +106,31 @@ ul{
     margin-top: 0.5em;
     margin-bottom: 3rem;
 }
-
+.social-media a img:hover{
+    background-color: var(--col-green-4);
+    border-radius: 6px;
+}
+.social-media a img.round:hover{
+    border-radius: 100%;
+}
 footer{
     grid-area: footer;
 }
+
+.profile-picture{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20rem;
+    background-image: url("../images/Ich.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+.profile-picture:hover{
+    border-radius: 5rem;
+    transition-duration: 0.5s;
+}
+
