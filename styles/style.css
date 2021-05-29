@@ -15,11 +15,12 @@ h1{
 
 
 .cover{
-    width: 70%;
+    width: 90%;
     height: auto;
     min-width: 600px;
     position: relative;
     z-index: 93;
+    margin-top: 4.5rem;
 
 }
 :root{
@@ -41,27 +42,39 @@ h1{
     src: url(./Reislust-97D7.ttf);
     }
 
+.plants-decoration{
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10rem;
+}
+.dec1{
+    grid-area: dec1;
+}
+.dec2{
+    grid-area: dec2;
+}
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
 .grid{
     display: grid;
-    grid-template-areas: "header header"
-                        "main main"
-                        "footer footer";
+    grid-template-areas: "dec1 header header dec2"
+                        "empty1 main main empty2"
+                        "footer footer footer footer";
     gap: 10px 10px;
+    grid-template-columns: 3.5rem 1fr 1fr 3.5rem;
 }
 
 header{
     grid-area: header;
+    
 }
 
 nav{
     grid-area: nav;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
 
 }
 
@@ -91,4 +104,33 @@ ul{
     width: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 0.5em;
+    margin-bottom: 3rem;
 }
+.social-media a img:hover{
+    background-color: var(--col-green-4);
+    border-radius: 6px;
+}
+.social-media a img.round:hover{
+    border-radius: 100%;
+}
+footer{
+    grid-area: footer;
+}
+
+.profile-picture{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20rem;
+    background-image: url("../images/Ich.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+.profile-picture:hover{
+    border-radius: 5rem;
+    transition-duration: 0.5s;
+}
+
