@@ -179,10 +179,7 @@ footer{
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
-}
-
-form{
-    width: 50%;
+    background-color: var(--col-green-5);
 }
 .end-buddy{
     width: 50%;
@@ -194,15 +191,87 @@ form{
 .sources{
     width: 100%;
 }
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+* {
+  transition: all 0.5s ease;
+}
 
-input, textarea{
-    width: 70%;
-    float: right;
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
-.submit-button{
-    width: 15%;
-    margin: 1% 27.5%;
+
+form {
+  width: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
+form div, form label, form input, form textarea {
+  width: 100%;
+}
+
+.field:nth-of-type(2) {
+  margin: 16px 0;
+}
+
+label, input, textarea {
+  padding: 8px;
+}
+
+[placeholder] {
+font-family: Reislust;
+font-size: 0.7rem;
+}
+
+label i {
+  margin: 0 10px 0 0;
+}
+
+.field:focus-within label {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 6px -6px #555;
+}
+input:focus, textarea:focus {
+  background: white;
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+button {
+  background: var(--col-font);
+  margin: 16px 0 50px 0;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px #555;
+}
+button:hover {
+  letter-spacing: 2px;
+  box-shadow: none;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -279,3 +348,4 @@ input, textarea{
   from {opacity: .4}
   to {opacity: 1}
 }
+
