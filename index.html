@@ -71,7 +71,7 @@
 
                             <!-- Full-width images with number and caption text -->
                             <div class="mySlides fade">
-                            <img src="./images/Challenges/journal.jpg" class="slide-img">
+                            <img src="./images/Challenges/journal.jpg" class="slide-img" id="pic-1">
                             <div class="text">Journaling</div>
                             </div>
                         
@@ -108,33 +108,52 @@
                 </div>
                 <div class="projects" id="projects">
                     <h2>Projects</h2>
-                        <h3>What I'm working on</h3>
-                            <ul>
-                                <li>Codecademy</li>
-                                <li>Spanish via Babbel</li>
-                                <li>Skatboarding</li>
-                                <li>Surfskatebording</li>
-                                <li>Planing to Travel</li>                        
-                                <li>Freeletics</li>
-                                <li>...</li>
-                            </ul>
-                        <h3>Themes that interesst me</h3>
-                            <ul>
-                                <li>Personal Growth</li>
-                                <li>Finances</li>
-                                <li>Breathing</li>
-                                <li>Yoga</li>
-                                <li>...</li>
-                            </ul>
-                        <h3>My "Werdegang</h3>
-                            <h4>Timeline...</h4>
-                
+                    <div class="projects-flex">
+                        <div class="work">
+                            <h3>What I'm working on</h3>
+                                <ul>
+                                    <li>Codecademy</li>
+                                    <li>Spanish via Babbel</li>
+                                    <li>Skatboarding</li>
+                                    <li>Surfskatebording</li>
+                                    <li>Planing to Travel</li>                        
+                                    <li>Freeletics</li>
+                                    <li>...</li>
+                                </ul>
+                        </div>
+                        <div class="themes">
+                            <h3>Themes that interesst me</h3>
+                                <ul>
+                                    <li>Personal Growth</li>
+                                    <li>Finances</li>
+                                    <li>Breathing</li>
+                                    <li>Yoga</li>
+                                    <li>...</li>
+                                </ul>
+                        </div>
+                        <div class="journey">
+                            <h3>My Journey</h3>
+                                <h4>Timeline...</h4>
+                        </div>
+                    </div>
                 </div>
 
             </main>
             <footer>
-                <h2>You are at the end of the Road, Buddy!</h2>
-                <div>Icons erstellt von <a href="https://www.freepik.com" target="_blank" title="Freepik">Freepik</a> from <a target="_blank" href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="end-buddy">
+                <h2 >You are at the end of the Road, Buddy!</h2>
+                <iframe src="https://giphy.com/embed/3ohs86vZAWiJXWvQI0" frameBorder="0" class="gif"></iframe>
+            </div>
+                <form action="Send">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name"> <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="If you want me to answer...">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="..."></textarea> <br>
+                    <input type="submit" value="SEND" class="submit-button">
+                </form>
+                <div class="sources">Icons erstellt von <a href="https://www.freepik.com" target="_blank" title="Freepik">Freepik</a> from <a target="_blank" href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
             </footer>
          
         </div>

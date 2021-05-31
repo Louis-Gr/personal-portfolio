@@ -91,14 +91,6 @@ a{
     color: var(--col-green-2);
 }
 
-li{
-    list-style-position: inside;
-}
-ul{
-    width: 20%;
-
-}
-
 .social-media a img{
     height: auto;
     width: 1.5rem;
@@ -154,6 +146,63 @@ footer{
     max-height: 600px;
 }
 
+/* Projects */
+.projects-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work{
+    width: 33%;
+}
+
+.themes{
+    width: 33%;
+}
+.journey{
+    width:33%;
+}
+
+li{
+    list-style-position: inside;
+    
+}
+ul{
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+form{
+    width: 50%;
+}
+.end-buddy{
+    width: 50%;
+    border-radius: 5%;
+}
+.gif{
+    width: 100%;
+}
+.sources{
+    width: 100%;
+}
+
+input, textarea{
+    width: 70%;
+    float: right;
+}
+.submit-button{
+    width: 15%;
+    margin: 1% 27.5%;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
