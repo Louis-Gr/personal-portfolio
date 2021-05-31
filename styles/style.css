@@ -177,16 +177,18 @@ ul{
 footer{
     display: flex;
     justify-content: space-around;
+    align-content: center;
     width: 100%;
     flex-wrap: wrap;
     background-color: var(--col-green-5);
 }
 .end-buddy{
-    width: 50%;
-    border-radius: 5%;
+    max-width: 25%;
+    align-self: center;
 }
 .gif{
-    width: 100%;
+    margin: 0.1rem;
+    max-width:30%;
 }
 .sources{
     width: 100%;
