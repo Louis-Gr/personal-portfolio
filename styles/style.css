@@ -113,8 +113,8 @@ main{
 /* About Me */
 .profile-picture{
   width: 15rem;
-  height: 15rem;
-  border-radius: 20rem;
+  height: 18rem;
+  border-radius: 1rem;
   background-image: url("../images/Ich.jpg");
   background-repeat: none;
   background-position: center;
@@ -123,11 +123,12 @@ main{
 
 }
 
+/*
 .profile-picture:hover{
-  border-radius: 5rem;
+  border-radius: 1rem;
   transition-duration: 0.5s;
 }
-
+*/
 /* Challenges */
 .challenges-flex{
 display: flex;
@@ -141,7 +142,7 @@ height: 15rem;
 width: 12rem;
 margin: 0.5rem;
 border-radius: 1rem;
-  background-color: #64825E;
+background-color: var(--col-green-5);
 }
 
 .flex-container-picture{
