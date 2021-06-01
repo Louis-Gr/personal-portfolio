@@ -196,8 +196,11 @@ footer{
 }
 .gif{
     margin: 0.1rem;
-    max-width:30%;
+    max-width:100%;
+    min-width: 33%;
+    border-radius: 1rem;
 }
+
 .sources{
     width: 100%;
 }
