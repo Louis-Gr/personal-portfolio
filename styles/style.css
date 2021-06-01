@@ -1,190 +1,190 @@
-html{
-    font-size: 30px;
-    background-color: var(--col-backbround);
-    color: var(--col-font);
-    font-family: Reislust;
-    text-align: center;
-}
+/* Form */
 
-h1{
-  
-    font-size: 3rem;
-    z-index: 92;
-    
-}
-
-
-.cover{
-    width: 90%;
-    min-width: 600px;
-    position: relative;
-    z-index: 93;
-    margin-top: 2rem;
-    
-
-}
 :root{
-    --col-font: #1B231A;
-    --col-logo: #50684B;
-    --col-green-2: #64825E;
-    --col-green-3: #9AB295;
-    --col-green-4: #C7D4C4;
-    --col-green-5: #EAEDE8;
-    --col-backbround: #F7FAF4;
-    --col-red-1: #B04C35;
-    --col-red-2: #CB6852;
-    --col-red-3: #DFA99B;
-    --col-red-4: #F5F2F0;
-    --col-red-5: #F2EAE3;}
-   
+  --col-font: #1B231A;
+  --col-logo: #50684B;
+  --col-green-2: #64825E;
+  --col-green-3: #9AB295;
+  --col-green-4: #C7D4C4;
+  --col-green-5: #EAEDE8;
+  --col-backbround: #F7FAF4;
+  --col-red-1: #B04C35;
+  --col-red-2: #CB6852;
+  --col-red-3: #DFA99B;
+  --col-red-4: #F5F2F0;
+  --col-red-5: #F2EAE3;}
+  
 @font-face {
-    font-family: Reislust;
-    src: url(./Reislust-97D7.ttf);
-    }
+  font-family: Reislust;
+  src: url(./Reislust-97D7.ttf);
+  }
 
-.plants-decoration{
-    position: -webkit-sticky;
-    position: sticky;
-    top: -10rem;
+html{
+  font-size: 30px;
+  background-color: var(--col-backbround);
+  color: var(--col-font);
+  font-family: Reislust;
+  text-align: center;
 }
-.dec1{
-    grid-area: dec1;
+
+a{
+  text-decoration: none;
+  color: var(--col-green-2);
 }
-.dec2{
-    grid-area: dec2;
+h1{
+  font-size: 3rem;
+  z-index: 92;
 }
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+
+/* Grid */
 .grid{
-    display: grid;
-    grid-template-areas: "dec1 header header dec2"
-                        "empty1 main main empty2"
-                        "footer footer footer footer";
-    gap: 10px 10px;
-    grid-template-columns: 3.5rem 1fr 1fr 3.5rem;
+  display: grid;
+  grid-template-areas: "dec1 header header dec2"
+                      "empty1 main main empty2"
+                      "footer footer footer footer";
+  gap: 10px 10px;
+  grid-template-columns: 3.5rem 1fr 1fr 3.5rem;
 }
 
+/* Plants Decoration */
+.plants-decoration{
+  position: -webkit-sticky;
+  position: sticky;
+  top: -10rem;
+}
+
+.dec1{
+  grid-area: dec1;
+}
+
+.dec2{
+  grid-area: dec2;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/* Header */
 header{
-    grid-area: header;
-    
+  grid-area: header;
 }
-
+/* Navigation */
 nav{
-    grid-area: nav;
-    display: flex;
-    justify-content: center;
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
 
 }
 
 nav a{
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
-main{
-    grid-area: main;
-}
-
-a{
-    text-decoration: none;
-    color: var(--col-green-2);
+/* Heading */
+.cover{
+  width: 90%;
+  min-width: 600px;
+  position: relative;
+  z-index: 93;
+  margin-top: 2rem;
 }
 
 .social-media a img{
-    height: auto;
-    width: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 0.5em;
-    margin-bottom: 3rem;
+  height: auto;
+  width: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 3rem;
 }
 .social-media a img:hover{
-    background-color: var(--col-green-4);
-    border-radius: 6px;
+  background-color: var(--col-green-4);
+  border-radius: 6px;
 }
 .social-media a img.round:hover{
-    border-radius: 100%;
-}
-footer{
-    grid-area: footer;
+  border-radius: 100%;
 }
 
+/* Main Part */
+main{
+  grid-area: main;
+}
+
+/* About Me */
 .profile-picture{
-    width: 15rem;
-    height: 15rem;
-    border-radius: 20rem;
-    background-image: url("../images/Ich.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 20rem;
+  background-image: url("../images/Ich.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 
 }
 
 .profile-picture:hover{
-    border-radius: 5rem;
-    transition-duration: 0.5s;
+  border-radius: 5rem;
+  transition-duration: 0.5s;
 }
 
-
 /* Challenges */
-
 .challenges-flex{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
+display: flex;
+flex-wrap: wrap;
+align-content: space-around;
+justify-content: space-around;
 }
 
 .flex-container{
-  height: 15rem;
-  width: 12rem;
-  margin: 0.5rem;
-  border-radius: 1rem;
+height: 15rem;
+width: 12rem;
+margin: 0.5rem;
+border-radius: 1rem;
   background-color: #64825E;
 }
 
 .flex-container-picture{
-  height: 50%;
-  background-image: url("../images/Challenges/drunk.jpg");
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  
-}
+height: 50%;
+background-image: url("../images/Challenges/drunk.jpg");
+background-size: cover;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
 
+}
 
 /* Projects */
 .projects-flex{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .work{
-    width: 33%;
+  width: 33%;
 }
 
 .themes{
-    width: 33%;
+  width: 33%;
 }
 .journey{
-    width:33%;
+  width:33%;
 }
 
 li{
-    list-style-position: inside;
-    
+  list-style-position: inside;
+  
 }
 ul{
-    width: 100%;
-    text-align: left;
-    margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
 }
 
 /* Footer */
 footer{
-    display: flex;
-    justify-content: space-around;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
     align-content: center;
     width: 100%;
     flex-wrap: wrap;
@@ -201,13 +201,10 @@ footer{
 .sources{
     width: 100%;
 }
-@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
-* {
-  transition: all 0.5s ease;
-}
 
-.container {
-  width: 100%;
+/* Contact Form */
+.form-container {
+  width: 20%;
   height: 100%;
   padding: 0 16px;
   display: flex;
@@ -247,6 +244,7 @@ label i {
 .field:focus-within label {
   color: #000;
   letter-spacing: 2px;
+  transition: 0.5s ease;
 }
 
 input, textarea {
@@ -276,86 +274,11 @@ button {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 8px 6px -6px #555;
+  transition: 0.5s ease;
 }
 button:hover {
   letter-spacing: 2px;
   box-shadow: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.prev{
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #fff;
-  text-shadow: var(--col-green-3) 2px 2px;
-  font-size: 2rem;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  transition: 0.5s ease;
 }
 
