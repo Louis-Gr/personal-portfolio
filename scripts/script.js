@@ -1,5 +1,7 @@
 let element = document.getElementById('social-media-detox-challenge');
 element.onclick = changeStyle;
+element.onmouseover = function(){element.style.backgroundColor = "var(--col-green-4)"};
+element.onmouseleave = function(){element.style.backgroundColor = "var(--col-green-5)"}
 
 function changeStyle(){
     if(element.style.height === "25rem"){
@@ -18,4 +20,3 @@ function changeStyle(){
         document.getElementById("description-social-media-detox").style.visibility = "visible"
     }
 };
-
