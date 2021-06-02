@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <title>Louis Gruemer</title>
         <link rel="stylesheet" href="./styles/style.css">
@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./styles/form-style.scss">
         <link rel="icon" href="./images/icon.svg">
     </head>
-    <body>
+    <body id="body">
         <div class="grid">
             <!--Plants Decoration-->
             <div class="plants-decoration dec1" style="height: 10px;">
@@ -77,26 +77,32 @@
                     </p>
 
                     <!--Challenges Flex-->
-                    <div class="challenges-flex">
-                        <div class="flex-container">
+                    <div class="challenges-flex" id="challenges-flex">
+                        <div class="flex-container" id="social-media-detox-challenge">
                             <div class="flex-container-picture fcp-1"></div>
                             <div class="flex-container-text">
                                 <h3>30 Days Social Media Detox</h3>
+                                <div id="description-social-media-detox">
+                                    <h4>Learning</h4>
+                                    <p>You get like 100% more productive, if you don't let
+                                        those distractions fool you.
+                                    </p>
+                            </div>
                             </div>
                         </div>
-                        <div class="flex-container">
+                        <div class="flex-container" id="meditation-challenge">
                             <div class="flex-container-picture fcp-2"></div>
                             <div class="flex-container-text">
                                 <h3>30 Days Meditation</h3>
                             </div>
                         </div>
-                        <div class="flex-container">
+                        <div class="flex-container" id="cold-shower-challenge">
                             <div class="flex-container-picture fcp-3"></div>
                             <div class="flex-container-text">
                                 <h3>30 Days Cold Showers</h3>
                             </div>
                         </div>
-                        <div class="flex-container">
+                        <div class="flex-container" id="ollie-challenge">
                             <div class="flex-container-picture fcp-4"></div>
                             <div class="flex-container-text">
                                 <h3>30 Days Ollie Challenge</h3>
@@ -151,33 +157,33 @@
             </main>
 
             <footer>
-                <!--End of the Page-->
-                <iframe src="./images/Eminem.gif" frameBorder="0"class="gif"></iframe>
-                <h2 class="end-buddy">You are at the end of the Road, Buddy!</h2>
+                    <!--End of the Page-->
+                    <iframe src="./images/Eminem.gif" frameBorder="0"class="gif"></iframe>
+                    <h2 class="end-buddy">You are at the end of the Road, Buddy!</h2>
 
-                <!--Contact-form-->
-                <div class="form-container">
-                    <form>
-                        <div class="field" tabindex="1">
-                            <label for="username">
-                                <i class="far fa-user"></i>Your Name
-                            </label>
-                            <input name="username" type="text" placeholder="e.g. Peter Parker" required>
-                        </div>
-                        <div class="field" tabindex="2">
-                            <label for="email">
-                                <i class="far fa-envelope"></i>Your Email
-                            </label>
-                            <input name="email" type="text" placeholder="email@domain.com" required>
-                        </div>
-                        <div class="field" tabindex="3">
-                            <label for="message">
-                                <i class="far fa-edit"></i>Your Message
-                            </label>
-                            <textarea name="message" placeholder="type here" required></textarea>
-                        </div>
-                        <button type="reset">Send Me Message</button>
-                    </form>
+                    <!--Contact-form-->
+                    <div class="form-container">
+                        <form>
+                            <div class="field" tabindex="1">
+                                <label for="username">
+                                    <i class="far fa-user"></i>Your Name
+                                </label>
+                                <input name="username" type="text" placeholder="e.g. Peter Parker" required>
+                            </div>
+                            <div class="field" tabindex="2">
+                                <label for="email">
+                                    <i class="far fa-envelope"></i>Your Email
+                                </label>
+                                <input name="email" type="text" placeholder="email@domain.com" required>
+                            </div>
+                            <div class="field" tabindex="3">
+                                <label for="message">
+                                    <i class="far fa-edit"></i>Your Message
+                                </label>
+                                <textarea name="message" placeholder="type here" required></textarea>
+                            </div>
+                            <button type="reset">Send Me Message</button>
+                        </form>
 
                 <!--Copyright and Stuff-->    
                 </div>

@@ -153,7 +153,9 @@ border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
 
 }
-
+#description-social-media-detox{
+  visibility:hidden;
+}
 /* Projects */
 .projects-flex{
   display: flex;
@@ -185,12 +187,14 @@ ul{
 footer{
   grid-area: footer;
   display: flex;
+  margin: 1rem 0;
   justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: var(--col-green-5);
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--col-green-5);
 }
+
 .end-buddy{
     max-width: 25%;
     align-self: center;
@@ -236,7 +240,7 @@ label, input, textarea {
   padding: 8px;
 }
 
-[placeholder] {
+[placeholder]{
 font-family: Reislust;
 font-size: 0.7rem;
 }
