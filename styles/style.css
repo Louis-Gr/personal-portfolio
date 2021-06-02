@@ -135,12 +135,12 @@ display: flex;
 flex-wrap: wrap;
 align-content: space-around;
 justify-content: space-around;
+gap: 20px 10px;
 }
 
 .flex-container{
 height: 15rem;
 width: 12rem;
-margin: 0.5rem;
 border-radius: 1rem;
 background-color: var(--col-green-5);
 }

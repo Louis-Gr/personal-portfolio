@@ -8,14 +8,13 @@ function changeStyle(){
         element.style.position = "relative"
         element.style.transition = "0.5s ease"
         document.getElementById("description-social-media-detox").style.visibility = "hidden"
+        element.style.margin = "0"
     }
     else{
         element.style.height = '25rem';
         element.style.width = '20rem';
         element.style.transition = "0.5s ease"
-        element.style.position = "absolute"
-        element.style.right = "auto"
-        element.style.left = "auto"
+        element.style.margin = "0 25%"
         document.getElementById("description-social-media-detox").style.visibility = "visible"
     }
 };
