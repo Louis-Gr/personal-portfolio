@@ -18,7 +18,14 @@
   font-family: Reislust;
   src: url(./Reislust-97D7.ttf);
   }
-
+@font-face {
+  font-family: Amargo;
+  src: url(./amagro/Amagro-bold.ttf);
+}
+@font-face {
+  font-family: Montserat;
+  src: url(./Montserrat/Montserrat-Light.ttf);
+}
 html{
   font-size: 30px;
   background-color: var(--col-backbround);
@@ -166,6 +173,15 @@ border-top-right-radius: 1rem;
 }
 .fcp-1{
   background-image: url("../images/Challenges/no-facebook.jpg");
+}
+.fcp-2{
+  background-image: url("../images/Challenges/meditation.jpg");
+}
+.fcp-3{
+  background-image: url("../images/Challenges/icebath.jpg");
+}
+.fcp-4{
+  background-image: url("../images/Challenges/skate.jpg");
 }
 /* Projects */
 .projects-flex{
