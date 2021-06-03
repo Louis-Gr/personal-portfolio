@@ -16,21 +16,21 @@
   
 @font-face {
   font-family: Reislust;
-  src: url(./Reislust-97D7.ttf);
+  src: url(./fonts/Reislust-97D7.ttf);
   }
 @font-face {
-  font-family: Amargo;
-  src: url(./amagro/Amagro-bold.ttf);
-}
-@font-face {
   font-family: Montserat;
-  src: url(./Montserrat/Montserrat-Light.ttf);
+  src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face{
+  font-family: Roboto;
+  src: url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf)
 }
 html{
-  font-size: 30px;
+  font-size: 16px;
   background-color: var(--col-backbround);
   color: var(--col-font);
-  font-family: Reislust;
+  font-family: Montserat;
   text-align: center;
 }
 
@@ -39,15 +39,21 @@ a{
   color: var(--col-green-2);
 }
 h1{
-  font-size: 3rem;
+  font-family: Reislust;
+  font-size: 5rem;
   z-index: 92;
 }
+h2{
+  font-family: Reislust;
+  font-size: 4rem;
+}
 h3{
-  font-size: 1.5rem;
+  font-family: Reislust;
+  font-size: 3rem;
   margin: 0.4rem auto;
 }
 h4{
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
 
@@ -58,7 +64,7 @@ h4{
                       "empty1 main main empty2"
                       "footer footer footer footer";
   gap: 10px 10px;
-  grid-template-columns: 3.5rem 1fr 1fr 3.5rem;
+  grid-template-columns: 6rem 1fr 1fr 6rem;
 }
 
 /* Plants Decoration */
@@ -93,7 +99,7 @@ nav{
 }
 
 nav a{
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 /* Heading */
@@ -102,13 +108,13 @@ nav a{
   min-width: 600px;
   position: relative;
   z-index: 93;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .social-media a img{
   height: auto;
-  width: 1.5rem;
-  margin-right: 1.5rem;
+  width: 3rem;
+  margin-right: 3rem;
   margin-top: 0.5em;
   margin-bottom: 3rem;
 }
@@ -127,8 +133,8 @@ main{
 
 /* About Me */
 .profile-picture{
-  width: 15rem;
-  height: 18rem;
+  width: 28rem;
+  height: 31rem;
   border-radius: 1rem;
   background-image: url("../images/Ich.jpg");
   background-repeat: none;
@@ -138,12 +144,6 @@ main{
 
 }
 
-/*
-.profile-picture:hover{
-  border-radius: 1rem;
-  transition-duration: 0.5s;
-}
-*/
 /* Challenges */
 .challenges-flex{
 display: flex;
@@ -154,8 +154,8 @@ gap: 20px 10px;
 }
 
 .flex-container{
-height: 15rem;
-width: 12rem;
+height: 25rem;
+width: 22rem;
 border-radius: 1rem;
 background-color: var(--col-green-5);
 }
@@ -214,7 +214,7 @@ ul{
 footer{
   grid-area: footer;
   display: flex;
-  margin: 1rem 0;
+  margin: 2rem 0;
   justify-content: space-around;
   align-content: center;
   width: 100%;
@@ -225,22 +225,30 @@ footer{
 .end-buddy{
     max-width: 25%;
     align-self: center;
+    margin: 8rem 0;
 }
 .gif{
-    margin: 0.1rem;
-    max-width:100%;
-    min-width: 33%;
+    margin: 2rem 0 0;
+    height: 353px;
+    width: 480px;
     border-radius: 1rem;
 }
 
+/*sources*/
 .sources{
     width: 100%;
+    display:flex;
+    justify-content: center;
+    gap: 5rem;
+}
+#version{
+font-family: Roboto;
+position: absolute;
+right: 5rem;
 }
 
 /* Contact Form */
 .form-container {
-  width: 20%;
-  height: 100%;
   padding: 0 16px;
   display: flex;
   flex-flow: row nowrap;
@@ -249,7 +257,8 @@ footer{
 }
 
 form {
-  width: 400px;
+  width: 450px;
+  height:100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -268,8 +277,8 @@ label, input, textarea {
 }
 
 [placeholder]{
-font-family: Reislust;
-font-size: 0.7rem;
+font-family: Montserat;
+font-size: 1rem;
 }
 
 label i {
@@ -295,6 +304,7 @@ input:focus, textarea:focus {
 
 textarea {
   resize: none;
+  height: 10rem;
 }
 textarea::-webkit-scrollbar {
   width: 0;
