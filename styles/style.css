@@ -33,7 +33,6 @@ html{
   font-family: Montserat;
   text-align: center;
 }
-
 a{
   text-decoration: none;
   color: var(--col-green-2);
@@ -56,6 +55,34 @@ h4{
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  html{
+    font-size: 12px;
+  }
+  a{
+    text-decoration: none;
+    color: var(--col-green-2);
+  }
+  h1{
+    font-family: Reislust;
+    font-size: 4rem;
+    z-index: 92;
+  }
+  h2{
+    font-family: Reislust;
+    font-size: 3.5rem;
+  }
+  h3{
+    font-family: Reislust;
+    font-size: 3rem;
+    margin: 0.4rem auto;
+  }
+  h4{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
 
 /* Grid */
 .grid{
@@ -66,7 +93,16 @@ h4{
   gap: 10px 10px;
   grid-template-columns: 6rem 1fr 1fr 6rem;
 }
-
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  .grid{
+    grid-template-areas: "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    
+ }
+}
 /* Plants Decoration */
 .plants-decoration{
   position: -webkit-sticky;
@@ -86,6 +122,12 @@ h4{
   max-width: 100%;
   height: auto;
 }
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  .plants-decoration{
+    display: none;
+  }
+}
 /* Header */
 header{
   grid-area: header;
@@ -101,7 +143,12 @@ nav{
 nav a{
   margin-left: 4rem;
 }
-
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  nav a{
+    margin-left: 1rem;
+  }
+}
 /* Heading */
 .cover{
   width: 90%;
@@ -125,7 +172,17 @@ nav a{
 .social-media a img.round:hover{
   border-radius: 100%;
 }
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  .cover{
+    min-width: 100%;
+  }
 
+  .social-media a img{
+    width: 2rem;
+    margin-right: 2rem;
+  }
+}
 /* Main Part */
 main{
   grid-area: main;
@@ -143,7 +200,13 @@ main{
   margin: 0 auto;
 
 }
-
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  .profile-picture{
+    width: 80%;
+    height: 18rem;
+  }
+}
 /* Challenges */
 .challenges-flex{
 display: flex;
@@ -162,7 +225,6 @@ background-color: var(--col-green-5);
 
 .flex-container-picture{
 height: 50%;
-background-image: url("../images/Challenges/drunk.jpg");
 background-size: cover;
 border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
@@ -188,7 +250,9 @@ border-top-right-radius: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
-
+.projects h3{
+  margin-bottom: 1rem;
+}
 .work{
   width: 33%;
 }
@@ -202,12 +266,48 @@ border-top-right-radius: 1rem;
 
 li{
   list-style-position: inside;
+  margin: 0 0 1rem;
   
 }
 ul{
   width: 100%;
   text-align: left;
   margin: 0 auto;
+}
+ /* Smartphone Portrait */
+  @media only screen and (max-width: 479.98px){
+    .projects-flex{
+      justify-content: space-around;
+      align-content: space-around;
+    }
+    .work{
+      width: 100%;
+    }
+    
+    .themes{
+      width: 100%;
+    }
+    .journey{
+      width: 100%;
+    }
+  
+  }
+  /* Tablet Landscape*/
+@media only screen and (min-width: 992px){
+  .projects-flex{
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .work{
+    width: 45%;
+  }
+  
+  .themes{
+    width: 45%;
+  }
+  .journey{
+    width:45%;
+  }
 }
 
 /* Footer */
@@ -223,30 +323,54 @@ footer{
 }
 
 .end-buddy{
-    max-width: 25%;
-    align-self: center;
-    margin: 8rem 0;
+  max-width: 25%;
+  align-self: center;
+  margin: 8rem 0;
 }
 .gif{
-    margin: 2rem 0 0;
-    height: 353px;
-    width: 480px;
-    border-radius: 1rem;
+  margin: 2rem 0 0;
+  height: 353px;
+  width: 480px;
+  border-radius: 1rem;
+}
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  .end-buddy{
+    min-width: 100%;
+    margin: 2rem 0;
+  }
+  .gif{
+   display: none;
+  }
 }
 
 /*sources*/
 .sources{
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    gap: 5rem;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  gap: 5rem;
 }
 #version{
 font-family: Roboto;
 position: absolute;
 right: 5rem;
 }
-
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+.sources{
+  flex-wrap: wrap;
+  column-gap: 10rem;
+  row-gap: 0;
+}
+#version{
+  position: relative;
+  right: 0;
+}
+/*#designed-by{
+  margin: auto 3rem;
+}*/
+}
 /* Contact Form */
 .form-container {
   padding: 0 16px;
@@ -263,6 +387,9 @@ form {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+}
+form h3{
+  margin: 0 0 20px 20px;
 }
 form div, form label, form input, form textarea {
   width: 100%;
@@ -326,4 +453,28 @@ button:hover {
   box-shadow: none;
   transition: 0.5s ease;
 }
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+  form{
+    width: 100%;
+  }
+}
 
+
+
+
+/* Tablet Landscape*/
+@media only screen and (min-width: 992px){
+}
+/* Tablet Portrait*/
+@media only screen and (min-width: 768px){
+
+}
+/* Smartphone Landscape */
+@media only screen and (min-width: 480px){
+
+}
+/* Smartphone Portrait */
+@media only screen and (max-width: 479.98px){
+
+}
