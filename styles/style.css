@@ -197,6 +197,7 @@ background-color: var(--col-green-5);
 height: 50%;
 background-image: url("../images/Challenges/drunk.jpg");
 background-size: cover;
+background-position: center;
 border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
 

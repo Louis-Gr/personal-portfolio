@@ -1,6 +1,6 @@
 + Bilder Größe anpassen alle gleich
 + Links an die Bilder oder kurze beschreibung beim Hovern
-
++ Beschreibungen der Challenges
 
 
 ##Ressources
