@@ -50,7 +50,7 @@ h2{
 h3{
   font-family: Reislust;
   font-size: 3rem;
-  margin: 0.4rem auto;
+  margin: 0.4rem auto 1rem;
 }
 h4{
   font-size: 1.2rem;
@@ -85,6 +85,40 @@ h4{
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.pl1{
+  position: absolute;
+   left:3rem;
+   z-index: 93;
+}
+.pl2{
+  position: absolute;
+  left:1.3rem;
+  z-index: 91;
+  max-height: 25rem;
+}
+.pl3{
+  position: absolute;
+  left: 0.5rem;
+  z-index: 94;
+  max-height: 20rem;
+}
+.pl4{
+  position: absolute;
+   right:3rem;
+    z-index: 93;
+}
+.pl5{
+  position: absolute;
+  right:1rem;
+  z-index: 92;
+  max-height: 25rem;
+}
+.pl6{
+  position: absolute;
+  right:2rem; 
+  z-index: 91; 
+  max-height: 20rem;
 }
 /* Header */
 header{
@@ -226,7 +260,7 @@ footer{
 .end-buddy{
     max-width: 25%;
     align-self: center;
-    margin: 8rem 0;
+    margin: 2rem 0;
 }
 .gif{
     margin: 2rem 0 0;
@@ -234,7 +268,11 @@ footer{
     width: 480px;
     border-radius: 1rem;
 }
-
+.break{
+  display: none;
+  height: 0px;
+  width: 100%;
+}
 /*sources*/
 .sources{
     width: 100%;
@@ -328,7 +366,7 @@ button:hover {
   transition: 0.5s ease;
 }
 /* Smartphone Portrait */
-@media screen and (min-width: 100px) and (max-width: 1299.98px) {
+@media screen and (min-width: 100px){
   html{
     font-size: 12px;
   }
@@ -350,6 +388,10 @@ button:hover {
     margin-right: 3rem;
     margin-top: 0.5em;
     margin-bottom: 3rem;
+  }
+  .profile-picture img{
+    max-width: 100%;
+    height: auto;
   }
   .projects-flex{
     display: flex;
@@ -410,21 +452,88 @@ position:static;
   ul{
     margin-right: 20%;
   }
+  .form-container{
+    width: 80%;
+  }
 }
-
-
-
-
 
 /* Tablet Portrait */
 @media screen and (min-width: 768px) {
+  html{
+    font-size: 14px;
+  }
 }
 /* Tablet Landscape */
 @media screen and (min-width: 992px) {
+  .social-media a img{
+    height: auto;
+    width: 3rem;
+    margin-right: 3rem;
+    margin-top: 0.5em;
+    margin-bottom: 3rem;
+  }
+  .work{
+    width: 45%;
+  }
+  
+  .themes{
+    width: 45%;
+  }
+  .journey{
+    width: 45%;
+  }
+  .gif{
+  }
+  .break{
+    display: initial;
+  }
+  .end-buddy{
+    min-width: 33%;
+  }
+  .form-container{
+    width: 50%;
+    margin-top: 6rem;
+  }
+  .sources{
+    
+    justify-content: space-around;
+    
+}
+}
+
 /* Desktop */
 @media screen and (min-width: 1299.5px) {
+  html{
+    font-size: 16px;
+  }
+  .work{
+    width: 33%;
+  }
+  
+  .themes{
+    width: 33%;
+  }
+  .journey{
+    width:33%;
+  }
   .end-buddy{
     display: inline-block;
+    min-width: 22%;
   }
-}
+  .break{
+    display: none;
+  }
+
+  .gif{
+      margin: 2rem 0 0;
+      height: 353px;
+      width: 480px;
+      border-radius: 1rem;
+  }
+  .form-container {
+    width: 33%;
+  }
+  nav a{
+    margin-left: 4rem;
+  }
 }
