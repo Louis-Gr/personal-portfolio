@@ -34,7 +34,7 @@ function changeStyle(element){
     }
     else{
         element.style.height = '48rem';
-        element.style.width = '60rem';
+        element.style.width = '100%';
         element.style.transition = "0.5s ease"
         element.style.margin = "0 auto"
         if(element.id == "social-media-detox-challenge"){
@@ -74,6 +74,7 @@ function hoverMouse(challenge){
 function mouseLeave(challenge){
     challenge.style.backgroundColor = "var(--col-green-5)"};
 
-function notProgrammed(button){
-    alert("Not Programmed yet ;)")
-}
+
+function notProgrammed(){
+    alert("This button is still in progress ;)")
+};
