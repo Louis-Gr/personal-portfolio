@@ -201,12 +201,14 @@ border-top-right-radius: 1rem;
 
 li{
   list-style-position: inside;
+  margin-bottom: 1rem;
   
 }
 ul{
   width: 100%;
   text-align: left;
   margin: 0 auto;
+  
 }
 
 /* Footer */
@@ -326,7 +328,7 @@ button:hover {
   transition: 0.5s ease;
 }
 /* Smartphone Portrait */
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 100px) and (max-width: 1299.98px) {
   html{
     font-size: 12px;
   }
@@ -393,7 +395,27 @@ position:static;
 }
 /* Smartphone Landscape */
 @media screen and (min-width: 480px) {
+  .grid{
+    grid-template-areas:  "dec1 header header dec2"
+                          "empty1 main main empty2"
+                          "footer footer footer footer";
+    grid-template-columns: 6rem 1fr 1fr 6rem;
+                        }
+  .plants-decoration{
+    display: initial;
+  }
+  .gif{
+    display: initial;
+  }
+  ul{
+    margin-right: 20%;
+  }
 }
+
+
+
+
+
 /* Tablet Portrait */
 @media screen and (min-width: 768px) {
 }

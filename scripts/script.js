@@ -74,3 +74,6 @@ function hoverMouse(challenge){
 function mouseLeave(challenge){
     challenge.style.backgroundColor = "var(--col-green-5)"};
 
+function notProgrammed(button){
+    alert("Not Programmed yet ;)")
+}
