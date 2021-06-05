@@ -45,21 +45,21 @@ function changeStyle(element){
             document.getElementById("ollie-challenge").style.display = "none"
         }
         else if (element.id == "meditation-challenge"){
-            document.getElementById("meditation-challenge").scrollIntoView({behavior: 'smooth'});
+            document.getElementById("social-media-detox-challenge").scrollIntoView({behavior: 'smooth'});
             document.getElementById("description-meditation").style.visibility = "visible"
             document.getElementById("social-media-detox-challenge").style.display = "none"
             document.getElementById("cold-shower-challenge").style.display = "none"
             document.getElementById("ollie-challenge").style.display = "none"
         }
         else if (element.id == "cold-shower-challenge"){
-            document.getElementById("cold-shower-challenge").scrollIntoView({behavior: 'smooth'});
+            document.getElementById("social-media-detox-challenge").scrollIntoView({behavior: 'smooth'});
             document.getElementById("description-cold-showers").style.visibility = "visible"
             document.getElementById("social-media-detox-challenge").style.display = "none"
             document.getElementById("meditation-challenge").style.display = "none"
             document.getElementById("ollie-challenge").style.display = "none"
         }
         else if (element.id == "ollie-challenge"){
-            document.getElementById("meditation-challenge").scrollIntoView({behavior: 'smooth'});
+            document.getElementById("social-media-detox-challenge").scrollIntoView({behavior: 'smooth'});
             document.getElementById("description-ollie").style.visibility = "visible"
             document.getElementById("social-media-detox-challenge").style.display = "none"
             document.getElementById("meditation-challenge").style.display = "none"

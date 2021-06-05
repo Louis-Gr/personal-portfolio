@@ -104,8 +104,7 @@ nav a{
 
 /* Heading */
 .cover{
-  width: 90%;
-  min-width: 600px;
+  width: 100%;
   position: relative;
   z-index: 93;
   margin: 2rem 0;
@@ -326,4 +325,84 @@ button:hover {
   box-shadow: none;
   transition: 0.5s ease;
 }
-
+/* Smartphone Portrait */
+@media screen and (min-width: 100px) {
+  html{
+    font-size: 12px;
+  }
+  .grid{
+    grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+    grid-template-columns:  1fr 1fr;
+  }
+  nav a{
+    margin-left: 1.4rem;
+  }
+  .plants-decoration{
+   display: none;
+  }
+  .social-media a img{
+    height: auto;
+    width: 2rem;
+    margin-right: 3rem;
+    margin-top: 0.5em;
+    margin-bottom: 3rem;
+  }
+  .projects-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .work{
+    width: 100%;
+  }
+  
+  .themes{
+    width: 100%;
+  }
+  .journey{
+    width: 100%;
+  }
+  
+  .gif{
+    display: none;
+  }
+  .end-buddy{
+    min-width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .sources{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 8rem;
+    row-gap: 0;
+}
+#designed-by{
+  width: 100%;
+}
+#version{
+font-family: Roboto;
+position:static;
+}
+}
+/* Smartphone Landscape */
+@media screen and (min-width: 480px) {
+}
+/* Tablet Portrait */
+@media screen and (min-width: 768px) {
+}
+/* Tablet Landscape */
+@media screen and (min-width: 992px) {
+/* Desktop */
+@media screen and (min-width: 1299.5px) {
+  .end-buddy{
+    display: inline-block;
+  }
+}
+}
