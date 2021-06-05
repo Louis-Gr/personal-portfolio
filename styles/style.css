@@ -55,34 +55,7 @@ h4{
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  html{
-    font-size: 12px;
-  }
-  a{
-    text-decoration: none;
-    color: var(--col-green-2);
-  }
-  h1{
-    font-family: Reislust;
-    font-size: 4rem;
-    z-index: 92;
-  }
-  h2{
-    font-family: Reislust;
-    font-size: 3.5rem;
-  }
-  h3{
-    font-family: Reislust;
-    font-size: 3rem;
-    margin: 0.4rem auto;
-  }
-  h4{
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
-  }
-}
+
 
 /* Grid */
 .grid{
@@ -92,16 +65,6 @@ h4{
                       "footer footer footer footer";
   gap: 10px 10px;
   grid-template-columns: 6rem 1fr 1fr 6rem;
-}
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  .grid{
-    grid-template-areas: "header header"
-    "main main"
-    "footer footer";
-    grid-template-columns: 1fr 1fr;
-    
- }
 }
 /* Plants Decoration */
 .plants-decoration{
@@ -171,12 +134,7 @@ nav{
 nav a{
   margin-left: 4rem;
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  nav a{
-    margin-left: 1rem;
-  }
-}
+
 /* Heading */
 .cover{
   width: 100%;
@@ -199,17 +157,7 @@ nav a{
 .social-media a img.round:hover{
   border-radius: 100%;
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  .cover{
-    min-width: 100%;
-  }
 
-  .social-media a img{
-    width: 2rem;
-    margin-right: 2rem;
-  }
-}
 /* Main Part */
 main{
   grid-area: main;
@@ -227,13 +175,7 @@ main{
   margin: 0 auto;
 
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  .profile-picture{
-    width: 80%;
-    height: 24rem;
-  }
-}
+
 /* Challenges */
 .challenges-flex{
 display: flex;
@@ -302,41 +244,7 @@ ul{
   margin: 0 auto;
   
 }
- /* Smartphone Portrait */
-  @media only screen and (max-width: 479.98px){
-    .projects-flex{
-      justify-content: space-around;
-      align-content: space-around;
-    }
-    .work{
-      width: 100%;
-    }
-    
-    .themes{
-      width: 100%;
-    }
-    .journey{
-      width: 100%;
-    }
-  
-  }
-  /* Tablet Landscape*/
-@media only screen and (min-width: 992px){
-  .projects-flex{
-    justify-content: space-around;
-    align-content: space-around;
-  }
-  .work{
-    width: 45%;
-  }
-  
-  .themes{
-    width: 45%;
-  }
-  .journey{
-    width:45%;
-  }
-}
+
 
 /* Footer */
 footer{
@@ -360,17 +268,9 @@ footer{
   height: 353px;
   width: 480px;
   border-radius: 1rem;
+  align-self: center;
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-  .end-buddy{
-    min-width: 100%;
-    margin: 2rem 0;
-  }
-  .gif{
-   display: none;
-  }
-}
+
 .break{
   display: none;
   height: 0px;
@@ -388,21 +288,7 @@ font-family: Roboto;
 position: absolute;
 right: 5rem;
 }
-/* Smartphone Portrait */
-@media only screen and (max-width: 479.98px){
-.sources{
-  flex-wrap: wrap;
-  column-gap: 10rem;
-  row-gap: 0;
-}
-#version{
-  position: relative;
-  right: 0;
-}
-/*#designed-by{
-  margin: auto 3rem;
-}*/
-}
+
 /* Contact Form */
 .form-container {
   padding: 0 16px;
