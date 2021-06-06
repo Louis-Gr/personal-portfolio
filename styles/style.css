@@ -16,21 +16,21 @@
   
 @font-face {
   font-family: Reislust;
-  src: url(./fonts/Reislust-97D7.ttf);
+  src: url('./fonts/Reislust-97D7.ttf');
   }
 @font-face {
   font-family: Montserat;
-  src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+  src: url('./fonts/Montserrat-Light.ttf');
 }
 @font-face{
   font-family: Roboto;
-  src: url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf)
+  src: url('./fonts/RobotoMono-Medium.ttf')
 }
 html{
   font-size: 16px;
   background-color: var(--col-backbround);
   color: var(--col-font);
-  font-family: Montserat;
+  font-family: "Montserat", sans-serif;
   text-align: center;
 }
 a{
